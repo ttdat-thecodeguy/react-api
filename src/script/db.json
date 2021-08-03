@@ -1,0 +1,29 @@
+{
+  "actors": [
+    {
+      "first_name": "nam",
+      "last_name": "nguyen Hai",
+      "id": 1
+    },
+    {
+      "first_name": "Huynh Hai",
+      "last_name": "nguyen Hai Minh",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "first_name": "Huynh",
+      "last_name": "Hai Nguyen Nam Phuong"
+    },
+    {
+      "first_name": "Huynh Hai",
+      "last_name": "MIN",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "first_name": "Nguyen ",
+      "last_name": "Hien"
+    }
+  ]
+}
