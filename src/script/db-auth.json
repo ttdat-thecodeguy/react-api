@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "email": "123@mail.com",
+      "password": "$2a$10$m1Tbv.oa0B6Y3FjR/LXEf.Z4teln15o02GW0jaM6PZZUEYjyA.wGa",
+      "id": 1
+    }
+  ],"actors": [
+  	{
+  		"first_name": "Truong",
+  		"last_name": "Dat"
+  	}
+  ]
+}
