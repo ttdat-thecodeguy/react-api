@@ -1,0 +1,22 @@
+{
+	"reactjs-routes-array": {
+		"prefix": "reRouteArray",
+		"body": [
+		  "import { exact } from 'prop-types';",
+		  "const routes = [",
+		  "    {",
+		  "        path:'/',",
+		  "        exact: true,",
+		  "        main:()=>{}",
+		  "    },",
+		  "    {",
+		  "        path:'',",
+		  "        exact: false,",
+		  "        main:()=><NotFound />",
+		  "    },",
+		  "];",
+		  "export default routes;"
+		],
+		"description": "reactjs-routes-array"
+	  }
+}

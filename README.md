@@ -1,10 +1,21 @@
 # Getting Started with Create React App
 ## Scripts
-`npm start`
-`npm run build`
-`npm run eject`
+- `npm start`
+- `npm run build`
+- `npm run eject`
 
-### Track
+## How To Run
+
++ change API domain in: src/constraints/Config.js
++ change port in .env file
++ run command : `npm start` to run
+
+## package
+date-io
+date-fns
+
+
+#### Track
 
 ## On must
 
@@ -14,14 +25,14 @@
 4. Working with file
 5. material UI
 
-## Hooks
+#### Hooks
 
 2. UseEffect
 3. UseState
 4. UseEffect
 5. UseDispatch
 
-## On Tracking
+#### On Tracking
 
 1. React Saga
 6. WebPack
