@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Route, Link } from 'react-router-dom'
-
+import { Route, Link, useHistory } from 'react-router-dom'
 
 const menus = [
     {
@@ -33,10 +32,19 @@ const MenuLink = ({label , to, active}) => {
             }}  />
     );
 }
-class Menu extends Component {
-    render() {
-        return (
 
+const showMenus = (menus)=>{
+    var result = null;
+    if(menus.length > 0){
+        result = menus.map((menu, idx) => {
+        return( <MenuLink key={idx} label={menu.name} to={menu.to} active={menu.exact}></MenuLink> )
+        })
+    }
+    return result
+}
+
+const Menu = () => {
+        return (
             <nav className="navbar navbar-expand-sm navbar-light bg-light">
                 <a className="navbar-brand" >Admin Dashboard</a>
                 <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -45,26 +53,12 @@ class Menu extends Component {
                 </button>
                 <div className="collapse navbar-collapse" id="collapsibleNavId">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                       {this.showMenus(menus)}
+                       {showMenus(menus)}
                     </ul>
                     
                 </div>
             </nav>          
         );
-    }
-    showMenus = (menus)=>{
-        var result = null;
-        if(menus.length > 0){
-            result = menus.map((menu, idx) => {
-            return( <MenuLink key={idx} label={menu.name} to={menu.to} active={menu.exact}></MenuLink> )
-            })
-        }
-        return result
-    }
 }
-
-Menu.propTypes = {
-
-};
 
 export default Menu;

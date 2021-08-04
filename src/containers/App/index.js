@@ -1,14 +1,13 @@
 import React from "react";
 import "./App.css";
-import Menu from "./components/Menu/Menu";
-import routes from "./routes";
+import Menu from "../../components/Menu/Menu";
+import routes from "../../routes";
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
-
-
+import history from '../../utils/history'
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router history={history}>
         <div>
             <Menu />
             <div class="container">
